@@ -17,7 +17,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form role="form" action="<?php echo base_url()?>didie/simpan_admin" method="post" enctype="multipart/form-data">
+                                    <form role="form" action="<?php echo base_url()?>dashboard/simpan_admin" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>Username</label>
                                             <input text="text" class="form-control" name="Username">

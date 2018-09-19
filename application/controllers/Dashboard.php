@@ -3,14 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
 * 
 */
-class Didie extends CI_Controller
+class Dashboard extends CI_Controller
 {
 	function __construct(){
   	 parent::__construct();
      $this->load->model('M_aksi');
      $this->load->helper(array('form','url','slug'));
      if($this->session->userdata('status') != 'Aktif'){
-  	  	redirect('Asup');
+  	  	redirect('login');
   	  }
   	}
 	function index(){
@@ -61,7 +61,7 @@ class Didie extends CI_Controller
 		 if(!$valid){
 		   	echo "<script>alert('Gagal Menambahkan  Qoutes !');history.go(-1);</script>";
 		   }else{
-		   	redirect('didie');
+		   	redirect('dashboard');
 		   }
 	}
 	function simpan_blog(){
@@ -92,7 +92,7 @@ class Didie extends CI_Controller
 		 	   if(!$valid){
 		   			echo "<script>alert('Gagal Menambahkan  Qoutes !');history.go(-1);</script>";
 		   		}else{
-		   		 redirect('didie/data_blog');
+		   		 redirect('dashboard/data_blog');
 		     }
 
 		 }
@@ -109,7 +109,7 @@ class Didie extends CI_Controller
   }
   function edit_blog($id = ""){
   	if($id == ""){
-  		redirect('didie/data_blog');
+  		redirect('dashboard/data_blog');
   	}else{
   	$where = array('id' => $id);
   	$data['blog'] = $this->M_aksi->edit_data($where, 'blog')->result();
@@ -142,7 +142,7 @@ class Didie extends CI_Controller
 		 	   if(!$valid){
         			echo "<script>alert('Data berhasil di Update !');history.go(-1);</script>";
        				}else{
-        				redirect('didie/data_blog');
+        				redirect('dashboard/data_blog');
        				}
 		}else{
 			$error = $this->upload->display_errors();
@@ -160,7 +160,7 @@ class Didie extends CI_Controller
   }
   function edit_qout($id = ""){
   	if($id == ""){
-  		redirect('didie');
+  		redirect('dashboard');
   	}else{
   	$where = array('id' => $id);
   	$data['qout'] = $this->M_aksi->edit_data($where, 'qoutes')->result();
@@ -176,7 +176,7 @@ class Didie extends CI_Controller
   	  if(!$sukses){
   	  	echo "<script>alert('Data gagal di update !');history.go(-1);</script>";
   	  }else{
-  	  	redirect('didie');
+  	  	redirect('dashboard');
   	  }
   }
   function tambah_admin(){
@@ -204,10 +204,10 @@ class Didie extends CI_Controller
 		 	 ];
 		 	 $valid = $this->db->insert('user', $data);
 		 	  if($valid){
-		 	  	redirect('didie/data_admin');
+		 	  	redirect('dashboard/data_admin');
 		 	  }
   }else{
-        redirect('didie/tambah_admin');
+        redirect('dashboard/tambah_admin');
   }
 }
 function data_admin(){
@@ -225,7 +225,7 @@ function hapus_admin($id){
 }
 function edit_admin($id = ""){
   if($id == ""){
-  	 redirect('didie/data_admin');
+  	 redirect('dashboard/data_admin');
   	}else{
   	$where = array('id' => $id);
   	$data['admin'] = $this->M_aksi->edit_data($where, 'user')->result();
@@ -256,12 +256,12 @@ function update_admin(){
 		 	 $id = $this->input->post('id');
 		 	 $valid = $this->db->update('user', $data, array('id' => $id));
 		 	  if($valid){
-		 	  	redirect('didie/data_admin');
+		 	  	redirect('dashboard/data_admin');
 		 	  }else{
 		 	  	 echo "<script>alert('Data gagal di update !');history.go(-1);</script>";
 		 	  }
   }else{
-        redirect('didie/tambah_admin');
+        redirect('dashboard/tambah_admin');
   }
 }
 }

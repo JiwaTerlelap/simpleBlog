@@ -16,21 +16,16 @@
   <main>
     <section id="next-section" class="probootstrap-section">
       <div class="container">
-        <div class="row mb4">
+        <div class="row mb20">
           <?php foreach($blog as $row){?>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="probootstrap-hentry mb30">
-              <p><a href="<?php echo base_url()?>assets/foto/blog/<?php echo $row->foto ?>" class="image-popup"><img src="<?php echo base_url()?>assets/foto/blog/<?php echo $row->foto ?>" class="img-responsive"></a></p>
-              <h3 class="mt0"><a href="<?php echo base_url()?>home/baca_blog/<?php echo $row->slug_blog?>" class="hover-reverse"><?php echo $row->judul?></a></h3>
+              <p><a href="<?php echo base_url()?>assets/foto/blog/<?php echo $row->foto ?>"><img src="<?php echo base_url()?>assets/foto/blog/<?php echo $row->foto ?>"  class="img-responsive"></a></p>
+              <h3 class="mt0"><a href="<?php echo base_url()?>detail/baca/<?php echo $row->slug_blog?>" class="hover-reverse"><?php echo $row->judul?></a></h3>
               <p class="text-mute"><?php echo $row->tanggal_upp?>&bull; <i class="icon-user"></i>&nbsp; <?php echo $row->user ?></p>
             </div>
           </div>
           <?php } ?>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <a href="<?php echo base_url()?>home/blog_all" role="button" class="btn btn-ghost btn-lg btn-block">Load More...</a>
-          </div>
-        </div>
       </div>
     </section>
 

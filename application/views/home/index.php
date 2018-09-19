@@ -48,7 +48,7 @@
           <?php foreach($blogs as $row){?>
           <div class="col-md-6">
             <p><img src="<?php echo base_url()?>assets/foto/blog/<?php echo $row->foto ?>" class="img-responsive"></p>
-            <h3 class="mt0"><a href="<?php echo base_url()?>home/baca_blog/<?php echo $row->slug_blog?>" class="hover-reverse"><?php echo $row->judul?></a></h3>
+            <h3 class="mt0"><a href="<?php echo base_url()?>detail/baca/<?php echo $row->slug_blog?>/" class="hover-reverse"><?php echo $row->judul?></a></h3>
             <p class="text-mute mb40"><?php echo $row->tanggal_upp?> &bull; <i class="icon-user"></i>&nbsp; <?php echo $row->user ?></p>
           </div>
           <?php } ?>
@@ -56,7 +56,7 @@
             <ul class="probootstrap-blog-list">
               <?php foreach($blog as $row){?>
               <li>
-                <a href="<?php echo base_url()?>home/baca_blog/<?php echo $row->slug_blog?>">
+                <a href="<?php echo base_url()?>detail/baca/<?php echo $row->slug_blog?>/">
                   <figure class="probootstrap-image"><img src="<?php echo base_url()?>assets/foto/blog/<?php echo $row->foto ?>" class="img-responsive"></figure>
                   <div class="probootstrap-text">
                     <h3 class="mt0 mb10"><?php echo $row->judul?></h3>

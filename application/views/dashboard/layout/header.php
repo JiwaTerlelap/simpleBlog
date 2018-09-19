@@ -50,7 +50,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo base_url()?>didie">Admin Blog</a>
+                <a class="navbar-brand" href="<?php echo base_url()?>dashboard">Admin Blog</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -66,7 +66,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="<?php echo base_url()?>asup/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="<?php echo base_url()?>login/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -90,28 +90,28 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="<?php echo base_url()?>didie/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?php echo base_url()?>dashboard/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url()?>didie/data_blog"><i class="fa fa-table fa-fw"></i> Data Blog</a>
+                            <a href="<?php echo base_url()?>dashboard/data_blog"><i class="fa fa-table fa-fw"></i> Data Blog</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url()?>didie/data_admin"><i class="fa fa-table fa-fw"></i> Data Admin</a>
+                            <a href="<?php echo base_url()?>dashboard/data_admin"><i class="fa fa-table fa-fw"></i> Data Admin</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url()?>didie/profile"><i class="fa fa-user fa-fw"></i> Profile</a>
+                            <a href="<?php echo base_url()?>dashboard/profile"><i class="fa fa-user fa-fw"></i> Profile</a>
                         </li>
                                <li>
                             <a href="#"><i class="fa fa-pencil fa-fw"></i>Buat<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="<?php echo base_url()?>didie/blog"><i class="fa glyphicon-pencil fa-fw"></i> Blog</a>
+                                    <a href="<?php echo base_url()?>dashboard/blog"><i class="fa glyphicon-pencil fa-fw"></i> Blog</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo base_url()?>didie/qoutes"><i class="fa fa-pencil fa-fw"></i> Qoutes</a>
+                                    <a href="<?php echo base_url()?>dashboard/qoutes"><i class="fa fa-pencil fa-fw"></i> Qoutes</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo base_url()?>didie/tambah_admin"><i class="fa fa-user fa-fw"></i> Add admin</a>
+                                    <a href="<?php echo base_url()?>dashboard/tambah_admin"><i class="fa fa-user fa-fw"></i> Add admin</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

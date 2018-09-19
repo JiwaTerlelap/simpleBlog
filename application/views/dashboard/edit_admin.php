@@ -18,7 +18,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <?php foreach($admin as $row){?>
-                                    <form role="form" action="<?php echo base_url()?>didie/update_admin" method="post" enctype="multipart/form-data">
+                                    <form role="form" action="<?php echo base_url()?>dashboard/update_admin" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>Username</label>
                                             <input text="text" class="form-control" name="Username" value="<?php echo $row->username?>">

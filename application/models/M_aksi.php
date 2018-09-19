@@ -16,6 +16,12 @@ class M_aksi extends CI_Model
   		$query = $this->db->get_where('user', $data);
   		return $query;
   	}
+    function get_blog($page){
+      $offset = 3*$page;
+      $limit = 3;
+      $query = $this->db->query("SELECT * FROM blog ORDER BY DESC limit $offset, $limit")->result();
+      return $query;
+    }
 }
 
 ?>

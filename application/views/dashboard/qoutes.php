@@ -16,7 +16,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form role="form" action="<?php echo base_url()?>didie/simpan_qout" method="post">
+                                    <form role="form" action="<?php echo base_url()?>dashboard/simpan_qout" method="post">
                                         <div class="form-group">
                                             <label>isi qoutes</label>
                                             <textarea class="form-control" rows="3" name="isi"></textarea>

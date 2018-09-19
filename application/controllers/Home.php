@@ -29,7 +29,7 @@ class Home extends CI_Controller {
 		$this->load->view('home/index', $data);
 	}
 	function blog(){
-		$data['blog'] = $this->db->order_by('id', 'DESC')->limit(9)->get('blog')->result_object();
+		$data['blog'] = $this->db->order_by('id', 'DESC')->get('blog')->result_object();
 		$this->load->view('home/blog', $data);
 	}
 	function about(){
@@ -39,21 +39,5 @@ class Home extends CI_Controller {
 	function contact(){
 		$this->load->view('home/kontak');
 	}
-
-	function baca_blog($slug =""){
-		if($slug == ""){
-			redirect('home/blog');
-		}else{
-
-		$this->load->model('M_aksi');
-		$baca = $this->M_aksi->get_slug($slug);
-		$data['baca'] = $baca;
-       $this->load->view('home/baca_blog', $data);
-		}
-
-	}
-	function blog_all(){
-		$data['blog'] = $this->db->get('blog')->result_object();
-		$this->load->view('home/get_all_blog', $data);
-	}
+  
 }

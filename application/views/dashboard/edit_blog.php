@@ -18,7 +18,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <?php foreach($blog as $row){?>
-                                    <form role="form" action="<?php echo base_url()?>didie/update_blog" method="post" enctype="multipart/form-data">
+                                    <form role="form" action="<?php echo base_url()?>dashboard/update_blog" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <input type="hidden" class="form-control" name="id" value="<?php echo $row->id ?>">
                                         </div>

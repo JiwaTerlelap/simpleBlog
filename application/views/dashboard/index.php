@@ -85,7 +85,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <a href="<?php echo base_url()?>didie/qoutes"><button type="submit" class="btn btn-primary">Tambah qoutes</button></a>
+                            <a href="<?php echo base_url()?>dashboard/qoutes"><button type="submit" class="btn btn-primary">Tambah qoutes</button></a>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -100,7 +100,7 @@
                                     <?php foreach($qout as $row){?>
                                     <tr class="odd gradeX">
                                         <td><?php echo $row->isi ?></td>
-                                        <td><a href="<?php echo base_url()?>didie/edit_qout/<?php echo $row->id ?>"><button class="btn btn-primary">edit</button></a><a href="<?php echo base_url()?>didie/hapus_qout/<?php echo $row->id ?>"><button class="btn btn-danger">Hapus</button></a></td>
+                                        <td><a href="<?php echo base_url()?>dashboard/edit_qout/<?php echo $row->id ?>"><button class="btn btn-primary">edit</button></a><a href="<?php echo base_url()?>dashboard/hapus_qout/<?php echo $row->id ?>"><button class="btn btn-danger">Hapus</button></a></td>
                                     </tr>
                                     <?php } ?>
                                 </tbody>

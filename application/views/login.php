@@ -164,7 +164,7 @@ body{
 			<div>login<span>Aplikasi</span></div>
 		</div>
 		<br>
-		<form action="<?php echo base_url()?>asup/PrOsesLogin" method="post">
+		<form action="<?php echo base_url()?>login/PrOsesLogin" method="post">
 		<div class="login">
 				<input type="text" placeholder="username" name="username"><br>
 				<input type="password" placeholder="password" name="password"><br>

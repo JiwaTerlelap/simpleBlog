@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to my website</title>
+    <meta charset="utf-8" name="shortcout icon">
     <meta name="description" content="website galeh , galeh website">
     <meta name="keywords" content="blog , blog hacking tutorial, tutorial hacking blog">
     
@@ -33,7 +34,7 @@
             <li><a href="<?php echo base_url()?>home/contact">Contact</a></li>
           </ul>
           <ul class="probootstrap-header-social hidden-xs">
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-github"></i></a></li>
             <li><a href="#"><i class="icon-facebook2"></i></a></li>
             <li><a href="#"><i class="icon-instagram2"></i></a></li>
           </ul>
@@ -41,7 +42,7 @@
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
             <h5>Social</h5>
             <ul class="social-buttons">
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-github"></i></a></li>
               <li><a href="#"><i class="icon-facebook2"></i></a></li>
               <li><a href="#"><i class="icon-instagram2"></i></a></li>
             </ul>

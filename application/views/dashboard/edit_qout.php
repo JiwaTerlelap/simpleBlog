@@ -16,7 +16,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form role="form" action="<?php echo base_url()?>didie/update_qout" method="post">
+                                    <form role="form" action="<?php echo base_url()?>dashboard/update_qout" method="post">
                                         <?php foreach($qout as $row){?>
                                         <div class="form-group">
                                             <label>isi qoutes</label>

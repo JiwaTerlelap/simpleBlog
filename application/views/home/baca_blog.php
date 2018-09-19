@@ -33,7 +33,6 @@
           <div class="row">
                 <h4>Tinggalkan Komentar :</h4>
           </div>
-        <div class="fb-comments" data-href="http://localhost/myblog/home/baca_blog" data-width="100%" data-numposts="5"></div>
         </div>
         </div>
       </div>

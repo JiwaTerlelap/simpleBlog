@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <a href="<?php echo base_url()?>didie/tambah_admin"><button type="submit" class="btn btn-primary">Tambah Admin</button></a>
+                            <a href="<?php echo base_url()?>dashboard/tambah_admin"><button type="submit" class="btn btn-primary">Tambah Admin</button></a>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -35,7 +35,7 @@
                                         <td><?php echo $row->umur ?></td>
                                         <td><?php echo $row->status ?></td>
                                         <td><img src="<?php echo base_url()?>assets/foto/admin/<?php echo $row->foto ?>" width="50"></td>
-                                        <td><a href="<?php echo base_url()?>didie/edit_admin/<?php echo $row->id ?>" role="button" class="btn btn-success">edit</a><a href="<?php echo base_url()?>didie/hapus_admin/<?php echo $row->id ?>" role="button" class="btn btn-danger">Hapus</a></td>
+                                        <td><a href="<?php echo base_url()?>dashboard/edit_admin/<?php echo $row->id ?>" role="button" class="btn btn-success">edit</a><a href="<?php echo base_url()?>dashboard/hapus_admin/<?php echo $row->id ?>" role="button" class="btn btn-danger">Hapus</a></td>
                                     </tr>
                                     <?php } ?>
                                 </tbody>

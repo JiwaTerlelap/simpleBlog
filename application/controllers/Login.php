@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
 * 
 */
-class Asup extends CI_Controller
+class Login extends CI_Controller
 {
 	function __construct(){
 		parent::__construct();
@@ -28,7 +28,7 @@ class Asup extends CI_Controller
 
 		  	  	 $this->session->set_userdata($session_data);
 		  	  	  if($this->session->userdata('status') == 'Aktif'){
-		  	  	  	redirect('didie');
+		  	  	  	redirect('dashboard');
 		  	  	  }else{
 		  	  	  	echo "<script>alert('Gagal Login: Cek username , password!');history.go(-1);</script>";
 		  	  	  }
@@ -40,7 +40,7 @@ class Asup extends CI_Controller
 	}
 	public function logout(){
 		$this->session->sess_destroy();
-		redirect('asup');
+		redirect('login');
 	}
 }
 

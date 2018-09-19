@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 18, 2018 at 05:28 AM
+-- Generation Time: Sep 19, 2018 at 06:17 AM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -55,7 +55,7 @@ CREATE TABLE `profile` (
 --
 
 INSERT INTO `profile` (`id`, `judul`, `isi`) VALUES
-(1, 'Tentang saya ?', '<p>saya adalah seorang pelajar di salah satu sekolah swasta yang ada di sukabumi&nbsp;</p>\r\n\r\n<p>saya sangat berambisi ingin menjadi full stack developer makanya tiap hari saya belajar ngoding</p>\r\n\r\n<p>walaupun kodingan ku bnyak error atau sering tanya tanya di google atau forum :v</p>\r\n\r\n<p>saya sangat menyukai hal - hal baru , apapun itu bcs hal&nbsp;baru bisa mengubah segala nya dalam kehidupan ku seperti dia</p>\r\n\r\n<p>karena dia gua berubah hwhw&nbsp;</p>\r\n');
+(1, 'Tentang saya ?', '<p>saya adalah seorang pelajar di salah satu sekolah swasta yang ada di sukabumi&nbsp;<br />\r\nsaya sangat berambisi ingin menjadi full stack developer makanya tiap hari saya belajar ngoding<br />\r\nwalaupun kodingan ku bnyak error atau sering tanya tanya di google atau forum :v<br />\r\nsaya sangat menyukai hal - hal baru , apapun itu bcs hal baru bisa mengubah segala nya dalam kehidupan ku seperti dia<br />\r\nkarena dia gua berubah hwhw&nbsp;</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -73,7 +73,7 @@ CREATE TABLE `qoutes` (
 --
 
 INSERT INTO `qoutes` (`id`, `isi`) VALUES
-(1, 'No Love in Here'),
+(1, 'BH IYAAA !1!1!1!'),
 (2, 'kadang hidup itu pilihan :)'),
 (3, 'Kapan nikah?');
 
@@ -97,7 +97,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `umur`, `status`, `foto`) VALUES
-(5, 'galeh', '5c1f8938f9d1768287ab2399ef9e9c93', '17', 'Aktif', '61113fbb9187900a5313787573cf2cf2.png');
+(5, 'galeh', '5c1f8938f9d1768287ab2399ef9e9c93', '17', 'Aktif', 'e7aebfdb61026fdf569107f968a85aa2.JPG');
 
 --
 -- Indexes for dumped tables
@@ -135,7 +135,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `qoutes`

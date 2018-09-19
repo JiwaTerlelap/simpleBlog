@@ -14,7 +14,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     
-                                    <form role="form" action="<?php echo base_url()?>didie/update_profile" method="post">
+                                    <form role="form" action="<?php echo base_url()?>dashboard/update_profile" method="post">
                                         <?php foreach($profile as $row){?>
                                         <div class="form-group">
                                             <label>judul</label>

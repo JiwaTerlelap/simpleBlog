@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <a href="<?php echo base_url()?>didie/blog"><button type="submit" class="btn btn-primary">Tambah Blog</button></a>
+                            <a href="<?php echo base_url()?>dashboard/blog"><button type="submit" class="btn btn-primary">Tambah Blog</button></a>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -34,7 +34,7 @@
                                         <td><?php echo $row->judul?></td>
                                         <td><?php echo $potong; ?></td>
                                         <td><img src="<?php echo base_url()?>assets/foto/blog/<?php echo $row->foto?>" width="100"></td>
-                                        <td><a href="<?php echo base_url()?>didie/edit_blog/<?php echo $row->id ?>"><button class="btn btn-primary">edit</button><a href="<?php echo base_url()?>didie/hapus_blog/<?php echo $row->id ?>"><button class="btn btn-danger">Hapus</button></a></td>
+                                        <td><a href="<?php echo base_url()?>dashboard/edit_blog/<?php echo $row->id ?>"><button class="btn btn-primary">edit</button><a href="<?php echo base_url()?>dashboard/hapus_blog/<?php echo $row->id ?>"><button class="btn btn-danger">Hapus</button></a></td>
                                     </tr>
                                     <?php endforeach; ?>
                                 </tbody>
